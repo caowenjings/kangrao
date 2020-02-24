@@ -1,0 +1,66 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { //font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+
+a:link {
+	
+} 
+a:visited {
+
+} 
+a:hover {
+	text-decoration: none;
+	color: #02cda8;
+} 
+a:active {
+	
+}
+
+/*清除浮动*/
+.clearfix:before,.clearfix:after{ 
+    content:""; 
+    display:table; 
+} 
+.clearfix:after{clear:both;} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/ 
+}
+
+/*文字溢出*/
+.clip{
+	overflow:hidden; /*超出部分隐藏*/
+	white-space:nowrap;/*强制在一行显示*/
+	text-overflow:clip;
+	}
+.elli_1{
+	overflow:hidden; /*超出部分隐藏*/
+	white-space:nowrap;/*强制在一行显示*/
+	text-overflow:ellipsis;/*结尾3点省略号*/
+}
+.elli_2{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;/*指定行数，溢出则隐藏*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.elli_3{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;/*指定行数，溢出则隐藏*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
